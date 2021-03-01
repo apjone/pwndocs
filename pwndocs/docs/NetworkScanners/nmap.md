@@ -6,7 +6,9 @@ title: nmap
 
 * Fast scan
 
-```nmap -F {IP-ADDRESS}```
+```
+nmap -F {IP-ADDRESS}
+```
 
 * CTF scan
 
