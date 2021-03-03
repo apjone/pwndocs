@@ -16,17 +16,23 @@ Here is a list of common ports.
 | 80   | tcp        | HTTP ( web server )
 | 88   | tcp        | Kerberos
 | 88   | udp        | Kerberos
+| 110  | tcp        | POP3
 | 117  | udp        | XDMCP
 | 123  | udp        | NTP
 | 135   | tcp        | RPC 
+| 143   | tcp        | IMAP
 | 161   | tcp        | SNMP ( Simple Network Management Protocol )
 | 161   | udp        | SNMP ( Simple Network Management Protocol )
 | 389   | tcp        | LDAP
 | 443   | tcp        | HTTP***S*** ( web server )
 | 445   | tcp        | SMB
+| 465   | tcp        | SMPTS ( Alt )
+| 587   | tcp        | SMPTS
 | 631   | tcp        | CUPS IPP Port
 | 631   | udp        | CUPS IPP Port
 | 636   | tcp        | LDAP***S***
+| 993   | tcp        | IMAPS
+| 995   | tcp        | POP3S
 | 1433  | tcp        | MS SQL
 | 2049  | tcp        | NFS
 | 3128  | tcp        | SQUID ( Proxy )
@@ -38,15 +44,15 @@ Here is a list of common ports.
 | 5060   | udp        | SIP
 | 5061  | tcp        | SIP ( encrypted )
 | 5061  | udp        | SIP ( encrypted )
+| 5555  | tcp         | Android Debug Bridge
 | 5800   | tcp        | VNC
 | 5900   | tcp        | VNC
-| 6000   | tcp        | Xorg XDMCP  :0
-| 6001   | tcp        | Xorg XDMCP  :1
-| 6002   | tcp        | Xorg XDMCP  :2
-| 6003   | tcp        | Xorg XDMCP  :3
-| 6004   | tcp        | Xorg XDMCP  :4
-| 6005   | tcp        | Xorg XDMCP  :5
+| 6000-6005   | tcp        | Xorg XDMCP  (:0 - :5)
+| 6665-6669 | tcp     | IRC
+| 6665-6669 | udp     | IRC
 | 8080   | tcp        | HTTP ( Alt )
+| 8181   | tcp        | HTTP***S*** ( Java Application Server )
 | 8443   | tcp        | HTTP***S*** ( Alt )
+| 8686   | tcp        | Java JMX
 | 9100   | tcp        | Jet Direct / Print Port
 | 32400  | tcp        | PLEX Access Port
