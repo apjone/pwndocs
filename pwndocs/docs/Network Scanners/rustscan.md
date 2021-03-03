@@ -6,7 +6,7 @@ title: Rustscan
 
 # Installation 
 
-Rustscan can be [downloaded from github](https://github.com/RustScan/RustScan/releases/latest) as a `dpkg` for installation on debian based systems such as Kali & Ubuntu.
+Rustscan can be [downloaded from github](https://github.com/RustScan/RustScan/releases/latest) as a `.deb` for installation on debian based systems such as Kali & Ubuntu.
 
 ```
 sudo dpkg -i Downloads/rustscan_version_amd64.deb
