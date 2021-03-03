@@ -51,7 +51,9 @@ The key's randomart image is:
 ```
 
 This will generate 2 files
+
 * id_ctf = This is the ***private*** key and should not be shared. 
+
 * id_ctf.pub = This is the ***public*** key, this is what should be added to the targets `.ssh/authorized_keys`
 
 As the private key is meant to be private most `ssh` clients will check the permissions to ensure that the key is secure. The file should only be accessible by the user, usual 0600 in octal format.  If required you can run the following command to fix permissions..
