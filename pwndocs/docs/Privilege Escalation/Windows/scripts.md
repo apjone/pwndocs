@@ -1,4 +1,4 @@
-title: Windows PrivEsc
+title: Scripts
 
 # winPEAS
 
@@ -17,4 +17,13 @@ wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 * Exe 64-bit
 ```
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASexe/binaries/x64/Release/winPEASx64.exe  
+```
+
+# LOLBAS
+
+Living Off The Land Binaries and Scripts (and also Libraries) [https://lolbas-project.github.io/#](https://lolbas-project.github.io/#) 
+
+Git Repo
+```
+git clone git@github.com:LOLBAS-Project/LOLBAS.git
 ```
