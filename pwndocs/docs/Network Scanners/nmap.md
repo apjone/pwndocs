@@ -1,7 +1,5 @@
 title: nmap
 
-# Network exploration tool and security / port scanner
-
 `nmap` is the goto cli tool that ships with `kali` and versatile and extendable. 
 
 * Fast scan

@@ -2,7 +2,7 @@ title: Windows PrivEsc
 
 # winPEAS
 
-linPEAS is part of the ***PEASS - Privilege Escalation Awesome Scripts SUITE*** and can be downloaded from Github [https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS). There are 2 versions of winPEAS, a batch script and executable.
+winPEAS is part of the ***PEASS - Privilege Escalation Awesome Scripts SUITE*** and can be downloaded from Github [https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS). There are 2 versions of winPEAS, a batch script and executable.
 
 * Batch Script
 ```
