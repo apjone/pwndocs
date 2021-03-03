@@ -1,4 +1,4 @@
-title: High Jacks
+title: Abusing Paths
 
 # C
 Using the below shell code we can create a binary that will pop a shell as the user running it. This is useful if we can abuse programs or `sudo` misconfigurations 
