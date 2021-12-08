@@ -1,6 +1,8 @@
 title: Listeners
 
-# Netcat
+# Listeners
+
+## Netcat
 
 Netcat / nc is great little utility. 
 
@@ -12,7 +14,7 @@ nc -lvnp {PORT}
 * -n = Do not do any DNS look resolution 
 * -p = Port Number ( Under 1024 will require root/sudo )
 
-# Metasploit
+## Metasploit
 
 Metasploit is a great framework & `meterpreter` is great shell with allot of functionality. 
 

