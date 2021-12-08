@@ -1,4 +1,5 @@
 title: Rustscan
+# Rustscan
 
 *RustScan is a modern take on the port scanner. Sleek & fast. All while providing extensive extendability to you.*
 
