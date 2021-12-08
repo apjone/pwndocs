@@ -1,5 +1,27 @@
 site_name: I Still Know Kung Fu!
-theme: windmill-dark
-plugin:
-  -search:
-    lang: en
+site_url: https://istillknowkungfu.com/
+site_description: apjone's field manual
+site_author: apjone
+#theme: windmill-dark
+theme:
+        name: material
+        palette:
+                primary: blue grey
+        features:
+                - navigation.tracking
+                  #                - navigation.tabs
+                - navigation.instant
+                - navigation.top
+plugins:
+        - search:
+                lang: en
+extra:
+  analytics:
+    provider: google
+    property: G-KV49LFVFJ1
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/apjone
+markdown_extensions:
+  - toc:
+      permalink: true
