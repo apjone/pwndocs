@@ -1,8 +1,10 @@
 title: WPScan
 
+# WPScan
+
 `WPScan` is a ruby script for probing wordpress sites for vulnerabilities and out of data software.
 
-# Installation
+## Installation
 
 `WPScan` is installed by default on Kali, for other distributions you can install via ruby package manager `gem`.
 
@@ -10,7 +12,7 @@ title: WPScan
 sudo gem install wpscan
 ```
 
-# Usage
+## Usage
 
 * Basic usage
 ```
